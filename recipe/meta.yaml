@@ -1,5 +1,5 @@
 {% set name = "coloc_sat" %}
-{% set version = "1.0.6" %}
+{% set version = "1.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bf81bc02612caf603000530b174343cd8a3076e9ad1e5f8a4600e182c0601600
+  sha256: b4d8752c1b0c29ec2fcd19af3a6c30537605feacb4c20763234c0a91c70ed7a9
 
 build:
   noarch: python

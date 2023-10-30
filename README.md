@@ -154,5 +154,3 @@ Feedstock Maintainers
 =====================
 
 * [@yreynaud](https://github.com/yreynaud/)
-* [@Skealz](https://github.com/Skealz/)
-

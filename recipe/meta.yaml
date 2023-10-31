@@ -28,6 +28,8 @@ requirements:
     - geopandas
     - xarray-datatree
     - xsar >=2023.8
+    - xradarsat2
+    - xarray-safe-s1
     - numpy
     - xarray
     - shapely

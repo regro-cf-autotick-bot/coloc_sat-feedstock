@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - Coloc_between_product_and_mission = coloc_sat.scripts.coloc_between_product_and_mission:main
     - Coloc_2_products = coloc_sat.scripts.coloc_2_products:main

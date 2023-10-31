@@ -18,13 +18,15 @@ build:
     - Coloc_2_products = coloc_sat.scripts.coloc_2_products:main
 
 requirements:
+  build:
+    - python >=3.6,<3.12
   host:
-    - python >=3.9
+    - python >=3.6,<3.12
     - pip
     - setuptools_scm
     - setuptools
   run:
-    - python >=3.9
+    - python >=3.6,<3.12
     - geopandas
     - xarray-datatree
     - xsar >=2023.8

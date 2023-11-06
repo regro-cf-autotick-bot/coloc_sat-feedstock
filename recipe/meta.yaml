@@ -42,6 +42,7 @@ requirements:
     - more-itertools
     - pyyaml
     - pyproj
+    - h5netcdf
 
 test:
   imports:

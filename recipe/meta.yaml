@@ -33,6 +33,7 @@ requirements:
     - xradarsat2
     - xarray-safe-s1
     - numpy
+    - numba
     - xarray
     - shapely
     - fsspec

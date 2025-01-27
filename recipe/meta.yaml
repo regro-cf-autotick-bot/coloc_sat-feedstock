@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 035967bc1e6d6c49a79529bafe013449aa7d6784ec5ec94c2f1490b2d796c77a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - Coloc_between_product_and_mission = coloc_sat.scripts.coloc_between_product_and_mission:main
     - Coloc_2_products = coloc_sat.scripts.coloc_2_products:main
@@ -21,12 +21,12 @@ requirements:
   build:
     - python >=3.6,<3.12
   host:
-    - python >=3.6,<3.12
+    - python {{ python_min }}
     - pip
     - setuptools_scm
     - setuptools
   run:
-    - python >=3.6,<3.12
+    - python >={{ python_min }},<3.12
     - geopandas
     - xarray-datatree
     - xsar >=2023.8
@@ -50,6 +50,7 @@ test:
     - coloc_sat
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
